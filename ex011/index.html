@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tentar abrir este site em diferentes dispositivos ou só aumentamos e diminuimos o site</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/M.png" type="image/png">
+        <img src="img/G.png" alt="imagen grande">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>aprendendo a reproduzir audio</p>
+   <audio src="Acordei Desnorteado E Dropando No Soundcloud (Prod. @yung Matzu).mp3" controls></audio>
+    <p>temos outra forma de adicionar audido em nosso site</p>
+    <audio preload="metadata" loop controls>
+        <source src="Acordei Desnorteado E Dropando No Soundcloud (Prod. @yung Matzu).mp3" type="audio/mpeg">
+        <source src="Acordei Desnorteado E Dropando No Soundcloud (Prod. @yung Matzu).mp3" type="audio/ogg">
+        <source src="Acordei Desnorteado E Dropando No Soundcloud (Prod. @yung Matzu).mp3" type="audio/wav">
+    </audio>
+    <p>infelizmente seu navegador n suporta o audio então clique aqui para baixar <a href="Acordei Desnorteado E Dropando No Soundcloud (Prod. @yung Matzu).mp3" target="_blank" type="external" download="Acordei Desnorteado E Dropando No Soundcloud (Prod. @yung Matzu).mp3">aqui</a></p>
+</html>

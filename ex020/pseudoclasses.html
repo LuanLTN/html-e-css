@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psceudo Classes</title>
+    <style>
+        /*
+        Seletores Personalizados
+
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            height: normal;
+        }
+        a{
+            color: rgb(60, 138, 255);
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: rgb(24, 170, 180);
+        }
+        .especial::before{
+            content:'👉' ;
+        }
+        .especial::after{
+            content:'👈' ;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Lista de Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCKzRE_ZOVPpf_25OaKyDXvQ" target="_blank" rel="external">Youtube/luanltn</a></li>
+        <li class="especial"><a href="https://www.instagram.com/luannunes605/" target="_blank" rel="external">Instagram/luanltn</a></li>
+        <li><a href="https://twitter.com/LtnCommision" target="_blank" rel="external">twitter/ltn</a></li>
+    </ul>
+</body>
+</html>
