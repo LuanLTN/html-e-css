@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        label.input{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="Cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel" class="nivel">Nivel</label>
+            <input type="range" name="Nivel" id="inivel">
+        </p>
+        <p>
+            <label for="ifoto">foto</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
